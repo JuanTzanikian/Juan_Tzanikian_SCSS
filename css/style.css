@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: sandybrown; }
+
+.container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center; }
+
+.header {
+  background-color: darkred; }
+  .header h1 {
+    color: bisque; }
+  .header .navbar {
+    background-color: bisque;
+    display: flex; 
+  text-decoration: none;}
+    .header .navbar .nav_links {
+      list-style: none;
+    text-decoration: none; }
+      .header .navbar .nav_links li {
+        padding: 20px;
+        display: inline;
+        text-decoration: none; }
+        .header .navbar .nav_links li a {
+          transition: all 0.3s ease 0s;
+          color: black;
+          font-size: large;
+          font-family: 'Franklin Gothic Medium'; }
+      .header .navbar .nav_links a:hover {
+        color: deepskyblue; }
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px; }
+  .section .table {
+    border-style: double; }
+    .section .table td {
+      border: solid 2px black; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque; }
+  .footer .ft-social {
+    padding: 0 1.875rem 1.25rem; }
+    .footer .ft-social .ft-social-list {
+      display: flex;
+      justify-content: center;
+      border-top: 1px #777 solid;
+      padding-top: 1.25rem;
+      list-style: none; }
+      .footer .ft-social .ft-social-list li {
+        margin: 0.5rem;
+        font-size: 1.25rem; }
+  .footer .ft-legal {
+    padding: 0.9375rem 1.875rem; }
+    .footer .ft-legal .ft-legal-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none; }
+      .footer .ft-legal .ft-legal-list li {
+        margin: 0.125rem 0.625rem;
+        white-space: nowrap; }
+
+@media only screen and (max-device-width: 480px) {
+  nav ul li {
+    height: 40px;
+    display: flex;
+    flex-direction: column; } }
