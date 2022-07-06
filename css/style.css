@@ -41,25 +41,21 @@ body {
   text-align: center; }
 
 .header {
-  grid-area: header;
   background-color: darkred; }
 
 h1 {
   color: bisque; }
 
 .navbar {
-  grid-area: navbar;
   background-color: bisque; }
 
 .sidebar {
-  grid-area: sidebar;
   background-color: bisque; }
 
 .sidebar2 {
-  grid-area: sidebar_2; }
+  background-color: bisque; }
 
 .main {
-  grid-area: main;
   background-color: darkred;
   color: bisque; }
 
@@ -81,6 +77,9 @@ h1 {
 
 footer ul {
   list-style: none; }
+
+h3 {
+  padding-bottom: 5px; }
 
 /* Comienza Flex */
 .main {
@@ -175,15 +174,13 @@ button {
   display: flex;
   padding: 20px;
   flex: center;
-  text-align: center; }
+  text-align: center;
+  background-color: darkred; }
 
 .card {
   margin: 0 auto;
-  /* Added */
   float: none;
-  /* Added */
-  margin-bottom: 10px;
-  /* Added */ }
+  margin-bottom: 10px; }
 
 /* FOOTER COMPILADO ESTILO SCSS*/
 .footer {
@@ -266,6 +263,18 @@ button {
   font-size: x-large;
   transition: all 0s ease-in-out 0.3s; }
 
+.mapouter {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 410px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px;
+  border-color: black;
+  height: 214px;
+  width: 234px; }
+
 /* COMIENZA MEDIA QUERY */
 @media only screen and (max-width: 480px) {
   .container {
@@ -292,9 +301,12 @@ button {
     flex-direction: column; }
   .message {
     margin-right: 2em;
-    order: 2; }
-  .button {
-    order: 3; }
+    display: flex;
+    position: relative;
+    bottom: 80px; }
+  .button_ {
+    position: relative;
+    top: 80px; }
   .searchbar {
     display: flex;
     justify-content: center;
@@ -371,8 +383,10 @@ button {
     justify-content: center; }
   .card {
     margin: 0 auto;
-    /* Added */
     float: none;
-    /* Added */
-    margin-bottom: 10px;
-    /* Added */ } }
+    margin-bottom: 10px; }
+  .card-img-top {
+    width: 150px; }
+  .carrusel {
+    padding: 10px;
+    gap: 10px; } }

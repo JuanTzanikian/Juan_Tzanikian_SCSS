@@ -2,12 +2,6 @@ $bannerHeading:40px;
 $bannerSub:20px;
 
 
-
-
-
-
-
-
 @mixin banner{
     width: 100%;
     position: relative;
@@ -67,22 +61,24 @@ background-color:darkred}
     
     
     
-    .header{grid-area: header;
+    .header{
     
     background-color: darkred;}
     
     h1{color: bisque;}
     
-    .navbar{grid-area: navbar;
+    .navbar{
     background-color: bisque;}
     
-    .sidebar{grid-area: sidebar;
+    .sidebar{
     
     background-color:bisque;}
+
+  .sidebar2{background-color:bisque}
     
-    .sidebar2{grid-area: sidebar_2;}
+  
     
-    .main{grid-area: main;
+    .main{
     
     background-color: darkred;
     
@@ -107,6 +103,8 @@ background-color:darkred}
         line-height: 1.5; }
     
     footer ul{list-style: none;}
+
+    h3{padding-bottom: 5px;}
     
     
     /* Comienza Flex */
@@ -218,12 +216,13 @@ background-color:darkred}
     .cartas{display: flex;
       padding: 20px;
       flex: center;
-text-align: center;}
+text-align: center;
+background-color: darkred;}
 
 .card{
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px; 
   }
 
   .equipoLegal2{ @extend .equipoLegal;}
@@ -332,6 +331,25 @@ gap: 10px;}
 .card_:hover{font-size: x-large;
 transition: all 0s ease-in-out 0.3s;}
 
+.mapouter{display: flex;
+
+  justify-content: center;
+  
+  position: relative;left: 410px;
+
+  padding: 10px;
+
+margin-bottom: 10px;
+
+border: 2px;
+
+border-color: black;
+
+
+  
+  
+  height:214px;width:234px;}
+
 
 
 
@@ -370,10 +388,10 @@ flex-direction : column;}
     }
     .message {
       margin-right: 2em;
-    
-    order: 2;}
+    display: flex;
+  position: relative; bottom:80px;}
 
-      .button{order: 3;}
+      .button_{position: relative; top:80px;}
 
       .searchbar{display: flex;
     justify-content: center ;
@@ -481,10 +499,13 @@ background-color:darkred}
     justify-content: center;}
 
 .card{
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px; 
   }
 
+.card-img-top{width: 150px}
 
+.carrusel{padding: 10px;
+gap: 10px;}
 }
